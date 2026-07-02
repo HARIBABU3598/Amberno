@@ -1,0 +1,59 @@
+.philosophy{
+  position: relative;
+  background: #f6f4f1;
+  padding: 0 0 120px 0;
+}
+
+.philosophyLeft {
+  width: 100%;
+  min-height: 40px;
+
+  background: #F95C4B;
+
+    padding: 20px 320px 50px 50px;
+  box-sizing: border-box;
+
+  position: relative;
+  z-index: 1;
+}
+
+.philosophyLeft h2 {
+  font-size: 2rem;
+  line-height: 1.15;
+  font-weight: 900;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.philosophyLeft h2 span {
+  color: black;
+}
+
+.philosophyLeft p pre{
+  color: white;
+}
+
+.featureBox {
+  width: 100%;
+  margin-top: 14px;
+  padding: 12px 15px;
+  background: rgba(7, 7, 7, 0.433);
+  color: white;
+}
+
+.featureBox h4{
+  margin-bottom:5px;
+}
+
+.philosophyRight{
+  position: absolute;
+  right: -10px;
+  top: -60px;
+  z-index: 10;
+}
+
+.philosophyRight img{
+  width: 680px;
+  max-width: none;
+  display: block;
+}

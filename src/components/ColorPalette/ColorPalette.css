@@ -1,0 +1,72 @@
+.colorPalette{
+  background:#f6f4f1;
+  padding:60px 40px 80px;
+}
+
+.paletteHeader{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  margin-bottom:50px;
+}
+
+.paletteHeader span{
+  font-size:10px;
+  letter-spacing:3px;
+  color:#222;
+  white-space:nowrap;
+}
+
+.paletteLine{
+  flex:1;
+  height:1px;
+  background:#8f8f8f;
+}
+
+.paletteTitle {
+  margin-bottom: 50px;
+  line-height: 1;
+}
+
+.titleMain {
+  color: #f95c4b;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.titleFade {
+  color: rgba(239, 108, 93, 0.795);
+  font-size: 2rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.paletteGrid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:12px;
+}
+
+.colorCard{
+  height:85px;
+  display:flex;
+  align-items:flex-end;
+  padding:10px;
+  border: 2px rgb(177, 174, 174) solid;
+}
+
+.colorCard span {
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+@media(max-width:768px){
+  .paletteGrid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .paletteTitle{
+    font-size:2rem;
+  }
+}

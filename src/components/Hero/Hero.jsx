@@ -12,11 +12,12 @@ function Hero() {
 
       {/* Announcement Bar */}
       <div className="announcement-bar">
-        <span>NEW COLLECTION DROPPING SOON</span>
-        <span>NEW COLLECTION DROPPING SOON</span>
-        <span>NEW COLLECTION DROPPING SOON</span>
-        <span>NEW COLLECTION DROPPING SOON</span>
-        <span>NEW COLLECTION DROPPING SOON</span>
+        <pre>
+        <span>NEW COLLECTION DROPPING SOON| </span>
+        <span>NEW COLLECTION DROPPING SOON| </span>
+        <span>NEW COLLECTION DROPPING SOON| </span>
+        <span>NEW COLLECTION DROPPING SOON| </span>
+        <span>NEW COLLECTION DROPPING SOON</span></pre>
       </div>
 
       {/* Hero Image */}

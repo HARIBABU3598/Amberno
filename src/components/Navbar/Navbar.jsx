@@ -15,7 +15,7 @@ function Navbar() {
         <li>ABOUT</li>
       </ul>
 
-      <div className="cart">🛒</div>
+      {/* <div className="cart">🛒</div> */}
     </nav>
   );
 }

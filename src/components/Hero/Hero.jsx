@@ -1,9 +1,12 @@
+import { useState } from "react";
 import "./Hero.css";
 import heroImg from "../../assets/images/hero.png";
 import logoIcon from "../../assets/images/Icon.png";
 import wordMark from "../../assets/images/WordMark.png";
 
 function Hero() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <section className="hero">
 
@@ -29,12 +32,23 @@ function Hero() {
           className="brand-name"
         />
 
-        {/* Center Menu */}
+        {/* Center Menu (Desktop) */}
         <div className="hero-nav-links">
           <a href="/">COLLECTION</a>
           <a href="/">COLOURS</a>
           <a href="/">ABOUT</a>
         </div>
+
+        {/* Mobile Menu Toggler */}
+        <button
+          className={`mobile-menu-toggle ${isMenuOpen ? "open" : ""}`}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle Navigation"
+        >
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </button>
 
         {/* Right Shop */}
         <div className="hero-shop">
@@ -43,6 +57,16 @@ function Hero() {
         </div>
 
       </nav>
+
+      {/* Mobile Menu Overlay */}
+      <div className={`mobile-menu-overlay ${isMenuOpen ? "active" : ""}`}>
+        <div className="mobile-menu-links">
+          <a href="/" onClick={() => setIsMenuOpen(false)}>COLLECTION</a>
+          <a href="/" onClick={() => setIsMenuOpen(false)}>COLOURS</a>
+          <a href="/" onClick={() => setIsMenuOpen(false)}>ABOUT</a>
+          <a href="/" onClick={() => setIsMenuOpen(false)}>SHOP</a>
+        </div>
+      </div>
 
       {/* Main Heading */}
       <div className="hero-content">

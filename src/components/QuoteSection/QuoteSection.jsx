@@ -7,10 +7,9 @@ function QuoteSection() {
       <p className="quoteLabel">THE FOUNDING IDEA</p>
 
       <h2 className="quoteText">
-       <pre> "YOU DIDN'T BUY A GRAPHIC.YOU BOUGHT THE
-        <br/>
-        
-        ABSENCE OF ONE."</pre>
+        "YOU DIDN'T BUY A GRAPHIC.
+        <br />
+        YOU BOUGHT THE ABSENCE OF ONE."
       </h2>
 
       <div className="quoteLine"></div>

@@ -75,3 +75,31 @@
 .backToTop:hover{
   color:white;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 50px 20px 30px;
+  }
+
+  .footerContent {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footerBrand,
+  .footerLinks,
+  .footerContact {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footerBottom {
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+  }
+}

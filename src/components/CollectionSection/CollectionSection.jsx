@@ -26,6 +26,16 @@ const products = [
     name: "THE WIDE CARGO",
     image: product4,
   },
+   {
+    code: "AM-102",
+    name: "THE WIDE CARGO",
+    image: product4,
+  },
+   {
+    code: "AM-102",
+    name: "THE WIDE CARGO",
+    image: product4,
+  }
 ];
 
 function CollectionSection() {

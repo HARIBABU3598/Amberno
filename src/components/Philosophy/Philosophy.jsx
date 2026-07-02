@@ -15,12 +15,8 @@ function Philosophy() {
           <span>JUST CLOTH.</span>
         </h2>
 
-        <p>
-        
-          <pre>AMBERNO isn't another graphic tee brand.
-          It's built around quiet design,</pre>
-          <pre>everyday wear,
-          and clothing that becomes part of your life.</pre>
+        <p className="philosophyDescription">
+          AMBERNO isn't another graphic tee brand. It's built around quiet design, everyday wear, and clothing that becomes part of your life.
         </p>
 
         <div className="featureBox">

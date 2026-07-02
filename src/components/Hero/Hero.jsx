@@ -60,8 +60,11 @@ function Hero() {
       </nav>
 
       {/* Mobile Menu Overlay */}
-      <div className={`mobile-menu-overlay ${isMenuOpen ? "active" : ""}`}>
-        <div className="mobile-menu-links">
+      <div 
+        className={`mobile-menu-overlay ${isMenuOpen ? "active" : ""}`}
+        onClick={() => setIsMenuOpen(false)}
+      >
+        <div className="mobile-menu-links" onClick={(e) => e.stopPropagation()}>
           <a href="/" onClick={() => setIsMenuOpen(false)}>COLLECTION</a>
           <a href="/" onClick={() => setIsMenuOpen(false)}>COLOURS</a>
           <a href="/" onClick={() => setIsMenuOpen(false)}>ABOUT</a>

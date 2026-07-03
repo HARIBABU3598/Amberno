@@ -12,13 +12,23 @@ function Hero() {
 
       {/* Announcement Bar */}
       <div className="announcement-bar">
-        <pre>
-        <span>NEW COLLECTION DROPPING SOON| </span>
-        <span>NEW COLLECTION DROPPING SOON| </span>
-        <span>NEW COLLECTION DROPPING SOON| </span>
-        <span>NEW COLLECTION DROPPING SOON| </span>
-        <span>NEW COLLECTION DROPPING SOON</span></pre>
-      </div>
+  <div className="marquee">
+    <div className="marquee-content">
+      <span>COLLECTION DROPPING SOON </span>
+      <span>COLLECTION DROPPING SOON </span>
+      <span>COLLECTION DROPPING SOON </span>
+      <span>COLLECTION DROPPING SOON </span>
+      <span>COLLECTION DROPPING SOON </span>
+
+      {/* Duplicate for seamless loop */}
+      <span>COLLECTION DROPPING SOON </span>
+      <span>COLLECTION DROPPING SOON </span>
+      <span>COLLECTION DROPPING SOON </span>
+      <span>COLLECTION DROPPING SOON </span>
+      <span>COLLECTION DROPPING SOON </span>
+    </div>
+  </div>
+</div>
 
       {/* Hero Image */}
       <img src={heroImg} alt="Amberno" className="hero-img" />

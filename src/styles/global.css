@@ -4,12 +4,13 @@
   box-sizing: border-box;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Grain", sans-serif;
   background: #000;
   color: #fff;
   overflow-x: hidden;

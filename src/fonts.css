@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Grain";
+  src: url("./assets/fonts/grain-regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Grain";
+  src: url("./assets/fonts/grain-medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Grain";
+  src: url("./assets/fonts/grain-semibold.otf") format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Grain";
+  src: url("./assets/fonts/grain-bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Grain";
+  src: url("./assets/fonts/grain-extrabold.otf") format("opentype");
+  font-weight: 800;
+}

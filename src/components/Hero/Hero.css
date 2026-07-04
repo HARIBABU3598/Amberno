@@ -227,16 +227,14 @@
   position: absolute;
 
   right:50px;
-  bottom:30px;
+  bottom:40px;
 
   color: white;
 
-  writing-mode: vertical-rl;
+ font-size: 35px;
 
-  font-size: 7px;
   letter-spacing: 2px;
 
-  z-index: 10;
 }
 
 /* BOTTOM ORANGE STRIP */

@@ -116,7 +116,7 @@ function Hero() {
 
       {/* Scroll */}
       <div className="scroll-text">
-        SCROLL
+        ↓
       </div>
 
       {/* Orange Strip */}

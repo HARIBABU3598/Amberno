@@ -70,15 +70,18 @@
 
 /* NAVBAR */
 
+/* NAVBAR — Logo on far left, links beside it, shop pushed right */
+
 .hero-navbar {
   position: absolute;
   top: 60px;
   left: 45px;
   right: 45px;
 
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
   align-items: center;
+  justify-content: flex-start;
+  gap: 0;
 
   z-index: 100;
 }
@@ -86,21 +89,24 @@
 /* LOGO */
 
 .logo-wrapper {
-  justify-self: start;
+  flex-shrink: 0;
 }
 
 .brand-name {
   width: 210px;
   height: auto;
   display: block;
+  flex-shrink: 0;
+  margin-right: 50px;
 }
 
-/* CENTER MENU */
+/* NAV LINKS — sit right after the logo */
 
 .hero-nav-links {
-  justify-self: center;
   display: flex;
   gap: 40px;
+  flex: 1;
+  justify-content: flex-start;
 }
 
 .hero-nav-links a {
@@ -136,14 +142,19 @@
   border-radius: 50%;
 }
 
-/* MAIN TEXT */
+/* MAIN TEXT + ICON INLINE — both aligned to same bottom baseline */
 
 .hero-content {
   position: absolute;
   left: 50px;
+  right: 50px;
   top: 55%;
   transform: translateY(-50%);
   z-index: 40;
+
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
 }
 
 .hero-content h1 {
@@ -154,21 +165,16 @@
 
   line-height: 0.95;
   letter-spacing: -2px;
+  margin: 0;
 }
 
-/* RIGHT CROWN */
+/* ICON — inline, aligned to bottom of text */
 
 .floating-logo {
-  position: absolute;
-
   width: 55px;
-
-  right: 80px;
-  top: 55%;
-
-  transform: translateY(-50%);
-
+  flex-shrink: 0;
   z-index: 40;
+  margin-bottom: 4px;
 }
 
 /* BOTTOM LINE */
@@ -355,6 +361,7 @@
 
 @media (max-width: 768px) {
 
+  /* Mobile navbar: hamburger | logo | shop — all left-biased */
   .hero-navbar {
     position: absolute;
     top: 60px;
@@ -363,35 +370,59 @@
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 0;
 
     z-index: 100;
   }
 
-  /* Left hamburger */
+  /* Hamburger on far left */
   .mobile-menu-toggle {
     display: flex;
-    position: absolute;
-    left: 0;
+    flex-shrink: 0;
+    order: 0;
   }
 
-  /* Center logo */
+  /* Logo right after hamburger */
   .brand-name {
-    width: 130px;
-    margin: 0 auto;
+    width: 120px;
+    margin-left: 14px;
+    margin-right: 0;
+    flex-shrink: 0;
+    flex: 0;
+    order: 1;
   }
 
-  /* Right profile */
+  /* Nav links hidden on mobile */
+  .hero-nav-links {
+    display: none;
+  }
+
+  /* Shop pushed to far right */
   .hero-shop {
-    position: absolute;
-    right: 0;
+    flex-shrink: 0;
+    margin-left: auto;
+    order: 2;
   }
 
   .hero-shop span {
     display: none;
   }
 
-  .hero-nav-links {
-    display: none;
+  /* Mobile: heading + icon aligned to bottom baseline */
+  .hero-content {
+    left: 20px;
+    right: 20px;
+    gap: 16px;
+    align-items: flex-end;
+  }
+
+  .hero-content h1 {
+    font-size: 2.4rem;
+  }
+
+  .floating-logo {
+    width: 42px;
+    margin-bottom: 3px;
   }
 }

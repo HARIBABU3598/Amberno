@@ -80,59 +80,57 @@
 
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 0;
 
   z-index: 100;
 }
 
 /* LOGO */
 
-.logo-wrapper {
-  flex-shrink: 0;
-}
-
 .brand-name {
   width: 210px;
   height: auto;
   display: block;
   flex-shrink: 0;
-  margin-right: 50px;
 }
 
-/* NAV LINKS — sit right after the logo */
+/* MENU */
 
 .hero-nav-links {
   display: flex;
+  align-items: center;
   gap: 40px;
-  flex: 1;
-  justify-content: flex-start;
+
+  margin-left: auto;
 }
 
 .hero-nav-links a {
   text-decoration: none;
-  color: #fff;
-
+  color: white;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 3px;
+  transition: 0.3s;
 }
 
-/* RIGHT MENU */
+.hero-nav-links a:hover {
+  opacity: 0.7;
+}
+
+/* SHOP */
 
 .hero-shop {
-  justify-self: end;
-
   display: flex;
   align-items: center;
   gap: 14px;
+
+  margin-left: 40px;
 }
 
 .hero-shop span {
   color: white;
   font-size: 11px;
-  letter-spacing: 2px;
   font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .profile-circle {
@@ -142,7 +140,7 @@
   border-radius: 50%;
 }
 
-/* MAIN TEXT + ICON INLINE — both aligned to same bottom baseline */
+/* MAIN TEXT + ICON INLINE */
 
 .hero-content {
   position: absolute;
@@ -153,7 +151,7 @@
   z-index: 40;
 
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 30px;
 }
 
@@ -168,13 +166,12 @@
   margin: 0;
 }
 
-/* ICON — inline, aligned to bottom of text */
+/* ICON — inline inside hero-content */
 
 .floating-logo {
   width: 55px;
   flex-shrink: 0;
   z-index: 40;
-  margin-bottom: 4px;
 }
 
 /* BOTTOM LINE */
@@ -409,12 +406,12 @@
     display: none;
   }
 
-  /* Mobile: heading + icon aligned to bottom baseline */
+  /* Mobile: heading + icon side by side */
   .hero-content {
     left: 20px;
     right: 20px;
     gap: 16px;
-    align-items: flex-end;
+    align-items: center;
   }
 
   .hero-content h1 {
@@ -423,6 +420,5 @@
 
   .floating-logo {
     width: 42px;
-    margin-bottom: 3px;
   }
 }

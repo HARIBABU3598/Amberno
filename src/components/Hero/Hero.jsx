@@ -89,14 +89,15 @@ function Hero() {
           <br />
           DROPPING SOON
         </h1>
-      </div>
-
-      {/* Right Crown */}
-      <img
+        <img
         src={logoIcon}
         alt="Logo"
         className="floating-logo"
       />
+      </div>
+
+      {/* Right Crown */}
+      
 
       {/* Bottom Line */}
       <div className="hero-bottom">
